@@ -48,7 +48,9 @@
 			password = $("#txt_password").val();
 			
 			
-			if(username=="cekmitl" && password=="ecc56789") { isValid=true; } 
+			//if(username=="cekmitl" || password=="ecc56789")
+      if(   document.getElementById("txt_username").value == "cekmitl"
+       && document.getElementById("txt_password").value == "ecc56789" ) { isValid=true; } 
 			
 			if(!isValid){
 				$("div#error_alert").show();
